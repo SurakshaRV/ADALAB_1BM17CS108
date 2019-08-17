@@ -1,15 +1,24 @@
 #include <stdio.h>
+#include<time.h>
 	int binarys(int a);
 	
 	
 	
 	int main()
 	{
+		clock_t start,end;
+		double t;
 		int x,n;
+		start=clock();
+		{
 		printf("Enter a number to find the square root");
 		scanf("%d",&x);
 		n=binarys(x);
+		}
+		end=clock();
 		printf("Square root of %d is  %d \n",x,n);
+		t=double(end-start)/double(CLOCKS_PER_SEC);
+		printf("\n time taken  %lf",t);
 		return 0;
 	}
 	int binarys(int a)
