@@ -17,7 +17,7 @@
 		}
 		end=clock();
 		printf("Square root of %d is  %d \n",x,n);
-		t=double(end-start)/double(CLOCKS_PER_SEC);
+		t=(double)(end-start)/(double)(CLOCKS_PER_SEC);
 		printf("\n time taken  %lf",t);
 		return 0;
 	}
