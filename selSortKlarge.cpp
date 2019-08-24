@@ -30,8 +30,8 @@ int main(int argc, char **argv)
 	}
 	}
 		end=clock();
-	for(int i=0;i<n;i++)
-		cout<<arr[i]<<"\n";
+	//for(int i=0;i<n;i++)
+		//cout<<arr[i]<<"\n";
 	cout<<"\nThe k largest elements are\n";
 	for(int i=n-1;i>=(n-k);i--)
 		cout<<arr[i]<<"\n";
