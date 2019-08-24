@@ -24,10 +24,10 @@ int main(int argc, char **argv)
 		for(int j=i+1;j<n;j++){
 		if(arr[j]<arr[min_i])
 		min_i=j;
+		}
 		int temp=arr[min_i];
 		arr[min_i]=arr[i];
 		arr[i]=temp;
-		}
 	}
 	}
 		end=clock();
