@@ -19,18 +19,18 @@ int main(int argc, char **argv)
 	cin>>k;
 	start=clock();
 	{
-	for(int i=0;i<n-1;i++){
-		for(int j=i+1;j<n;j++){
-			if(arr[i]>arr[j]){
-				int temp=arr[i];
-				arr[i]=arr[j];
-				arr[j]=arr[i];
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n-i-1;j++){
+			if(arr[j]<arr[j+1]){
+				int temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
 				}
 			}
 	}
 	}
 		end=clock();
-	cout<<"\nThe kth smallest element is "<<arr[k-1];
+	cout<<"\nThe kth smallest element is "<<arr[n-k];
 	t=double(end-start)/double(CLOCKS_PER_SEC);
 		cout<<"\n time taken: "<<t;
 	return 0;
