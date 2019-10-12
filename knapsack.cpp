@@ -30,6 +30,20 @@ void npsk(int *p,int *w){
 		cout<<'\n';
 	}
 	cout<<"\n Max profit is "<<v[n][c];
+	int i=n;
+	int j=c;
+	cout<<"\nIncluded items:\n";
+	while(i>=0 && j>=0)
+	{
+		if(v[i][j]!=v[i-1][j] && c>0)
+		{
+			cout<<" "<<i<<" ";
+			c-=w[i];
+			j=c;
+		}
+		i--;
+	}
+	cout<<"\n";
 }
 
 int main(int argc, char **argv)
