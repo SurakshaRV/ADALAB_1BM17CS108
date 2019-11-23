@@ -51,7 +51,7 @@ int main() {
       ratio[i] = profit[i] / weight[i];
    }
  
-   for (i = 0; i < num; i++) {
+   /*for (i = 0; i < num; i++) {
       for (j = i + 1; j < num; j++) {
          if (ratio[i] < ratio[j]) {
             temp = ratio[j];
@@ -67,7 +67,7 @@ int main() {
             profit[i] = temp;
          }
       }
-   }
+   }*/
  
    knapsack(num, weight, profit, capacity);
    return(0);
